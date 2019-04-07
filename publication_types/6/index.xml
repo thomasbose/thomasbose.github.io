@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>6 on Thomas Bose&#39;s Website</title>
+    <link>/publication_types/6/</link>
+    <description>Recent content in 6 on Thomas Bose&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/publication_types/6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Effects of Spatiality on Value Sensitive Decisions Made by Robot Swarms</title>
+      <link>/publication/effects-of-spatiality-on-value-sensitive-decisions-made-by-robot-swarms/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/effects-of-spatiality-on-value-sensitive-decisions-made-by-robot-swarms/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

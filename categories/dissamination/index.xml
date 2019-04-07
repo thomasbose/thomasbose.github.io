@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dissamination on Thomas Bose&#39;s Website</title>
+    <link>/categories/dissamination/</link>
+    <description>Recent content in dissamination on Thomas Bose&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Mar 2019 21:59:29 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/dissamination/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>New Paper Published in Neural Computation</title>
+      <link>/post/new-paper-published-in-neural-computation/</link>
+      <pubDate>Fri, 29 Mar 2019 21:59:29 +0000</pubDate>
+      
+      <guid>/post/new-paper-published-in-neural-computation/</guid>
+      <description>This paper studies a model animal choosing between different food sources in an ongoing decision-making process. The decision-making circuit regulating the response is implemented via a generic neural hardware motif. Nonlinearities in the circuit influence the behaviour of the model animal. We find the unexpected result that inherent oscillations of neuronal activity may enhance decision-making performance. The paper is scheduled to appear in the May 2019 issue of Neural Computation (Volume 31, Issue 5).</description>
+    </item>
+    
+  </channel>
+</rss>

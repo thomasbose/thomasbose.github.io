@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thomas Bose&#39;s Website on Thomas Bose&#39;s Website</title>
+    <link>/</link>
+    <description>Recent content in Thomas Bose&#39;s Website on Thomas Bose&#39;s Website</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Apr 2019 08:07:17 +0100</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>MuMoT - Multiscale Modelling Tool</title>
+      <link>/softwareitem/mumot/</link>
+      <pubDate>Thu, 04 Apr 2019 08:07:17 +0100</pubDate>
+      
+      <guid>/softwareitem/mumot/</guid>
+      <description>&lt;p&gt;&lt;em&gt;MuMoT&lt;/em&gt; is a software tool developed at the University of Sheffield as part of the &lt;a href=&#34;https://diode.group.shef.ac.uk/&#34; target=&#34;_blank&#34;&gt;DiODe project&lt;/a&gt;. It is open source and can be accessed on the &lt;a href=&#34;https://github.com/DiODeProject/MuMoT&#34; target=&#34;_blank&#34;&gt;MuMoT GitHub page&lt;/a&gt;, including full documentation and installation instructions.&lt;/p&gt;
+
+&lt;p&gt;MuMoT aims at life scientists/biologists with little mathematical background and engineers designing collective behaviours. It runs inside &lt;a href=&#34;https://jupyter.org/&#34; target=&#34;_blank&#34;&gt;Jupyter&lt;/a&gt; notebooks. MuMoT will be available as Python package that is easy to install on a personal computer and can also be run as server: &lt;a href=&#34;https://mybinder.org/v2/gh/DiODeProject/MuMoT/master?filepath=docs%2FMuMoTuserManual.ipynb&#34; target=&#34;_blank&#34;&gt;launch &lt;strong&gt;example-filled User Manual&lt;/strong&gt; now in your web-browser on MyBinder&lt;/a&gt;. MuMoT is designed in an object-oriented and modular fashion to make it easy to maintain and to extend functionality.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Core developers:&lt;/strong&gt; James A. R. Marshall, Andreagiovanni Reina, Thomas Bose (all at University of Sheffield)&lt;br /&gt;
+&lt;strong&gt;Packaging, documentation, deployment:&lt;/strong&gt; Will Furnass (University of Sheffield)&lt;br /&gt;
+&lt;strong&gt;Windows compatibility:&lt;/strong&gt; Renato P. Vasquez (Princeton University)&lt;/p&gt;
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;workflow.png&#34; width=&#34;600&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Schematic of a typical workflow in MuMoT.&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;MuMoT&amp;rsquo;s core features:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;requires simple input:&lt;/strong&gt; all functionality is based on providing information about the system as chemical reaction&lt;/li&gt;
+&lt;li&gt;allows &lt;strong&gt;model exploration&lt;/strong&gt; with simple commands, including &lt;strong&gt;model visualisation&lt;/strong&gt; (see stream plot below as an example)&lt;/li&gt;
+&lt;li&gt;automatically &lt;strong&gt;generates mathematical equations&lt;/strong&gt;, including ODEs, Master equation, system size expansion, Fokker-Planck equation
+(integrates with $\mathsf{\LaTeX}$ to display &amp;amp; export equations)&lt;/li&gt;
+&lt;li&gt;allows studying &lt;strong&gt;effects of noise&lt;/strong&gt; both analytically and graphically&lt;/li&gt;
+&lt;li&gt;allows &lt;strong&gt;interactive analysis&lt;/strong&gt; controlled by simple &lt;strong&gt;sliders&lt;/strong&gt; using &lt;strong&gt;IPython widgets&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;allows &lt;strong&gt;network analysis&lt;/strong&gt; of &lt;strong&gt;agent-based&lt;/strong&gt; simulations&lt;/li&gt;
+&lt;li&gt;features &lt;strong&gt;stochastic simulations&lt;/strong&gt; of the system&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;automated figure formatting&lt;/strong&gt; in publication-ready quality&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;featured.png&#34; width=&#34;600&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Example input and output in MuMoT: stream plot of honey bee nest-site selection model with two alternatives, A and B (&lt;a href=&#34;http://science.sciencemag.org/content/335/6064/108&#34; target=&#34;_blank&#34;&gt;Seeley et al. (2012)&lt;/a&gt; and &lt;a href=&#34;https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0073216&#34; target=&#34;_blank&#34;&gt;Pais et al. (2013)&lt;/a&gt;, cf. &lt;a href=&#34;/publication/best-of-n/&#34;&gt;our PRE article Reina et al. (2017)&lt;/a&gt; ). Fixed points are shown (blue hollow circle: saddle point, green full circle: stable fixed point).&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Try it out!&lt;/strong&gt; The &lt;em&gt;User Manual&lt;/em&gt; can be accessed (and worked with straight away) via &lt;a href=&#34;https://mybinder.org/v2/gh/DiODeProject/MuMoT/master?filepath=docs%2FMuMoTuserManual.ipynb&#34; target=&#34;_blank&#34;&gt;this link&lt;/a&gt; (it may take a few seconds, or a bit longer, until the server is ready) or you can get started by having a look at &lt;a href=&#34;/tutorial/&#34;&gt;these tutorials&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Collective Decision Making of a Robot Swarm</title>
+      <link>/project/collective-decision-making-of-a-robot-swarm/</link>
+      <pubDate>Tue, 02 Apr 2019 08:30:15 +0100</pubDate>
+      
+      <guid>/project/collective-decision-making-of-a-robot-swarm/</guid>
+      <description>&lt;p&gt;Drawing inspiration from naturalistic systems, such as house-hunting honeybees, we aim to implement distributed robotics solutions. Swarm robotics is thought to be one of the key technologies in future applications. For example, autonomous robust robot groups have the potential to improve exploration and other tasks in hazardous environments that are inhospitable or inaccessible to humans or larger robots. Combining decision theory and artificial decision-making systems, we compare theoretical models and empirical data to identify possible real world applications. Intriguingly, simple individual robot capabilities may lead to complex behaviour on the group level. Using the Kilobot platform as testbed, our objective is to uncover the underlying mechanisms in large groups of interacting robots reaching consensus and to gain practical insights of how well theory and experiment agree.&lt;/p&gt;
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;featured.png&#34; width=&#34;400&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Screenshot of a video showing 150 Kilobots in a decision-making task. The overlaying coloured circles (red and blue) show the two options localised in the environment.  The video is available on our &lt;a href=&#34;https://www.youtube.com/watch?v=Gdy5o18y5lg&#34; target=&#34;_blank&#34;&gt;DiODe Project Youtube channel&lt;/a&gt; (video produced by A. Reina).&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Representative publication:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/publication/effects-of-spatiality-on-value-sensitive-decisions-made-by-robot-swarms/&#34;&gt;A. Reina, T. Bose, V. Trianni, J.A.R. Marshall, Distributed Autonomous Robotic Systems (DARS). Springer Proceedings in Advanced Robotics, Vol. 6., pp. 461-473. Springer, Cham.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/publication/collective-decision-making/&#34;&gt;T. Bose, A. Reina, J.A.R. Marshall, Collective Decision Making, Current Opinion in Behavioral Sciences &lt;strong&gt;16&lt;/strong&gt;, 30-34 (2017)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Collective Decision Making of House Hunting Honeybees</title>
+      <link>/project/collective-decision-making-of-house-hunting-honeybees/</link>
+      <pubDate>Tue, 02 Apr 2019 08:29:41 +0100</pubDate>
+      
+      <guid>/project/collective-decision-making-of-house-hunting-honeybees/</guid>
+      <description>&lt;p&gt;In late spring and early summer, a honey bee colony becomes overcrowded. Then, half of the swarm rushes off with the old queen to setup a colony elsewhere and several hundred of its oldest bees will look for potential new nest sites. These scout bees come back to the hive and advertise new homes doing the waggle dance. Finally, the hive democratically selects a new nest site.&lt;/p&gt;
+
+&lt;p&gt;In real house-hunting honeybees it is crucial for the swarm to reach consensus as quick as possible while choosing the best alternative available. In a mathematical model with $N$ alternative potential new nest sites among which one has higher quality compared with the other $N-1$ options, we found that the relative time invested by swarm members in individual discovery and in signaling behaviors (expressed as ratio $r$ in the figure below) is one of the key parameters that determines decision performance.&lt;/p&gt;
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;featured.png&#34; width=&#34;400&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Plot displaying areas of decision-deadlock (A), possible deadlock-breaking (B) and guaranteed deadlock-breaking (C) depending on option quality, v, and ratio of interaction and spontaneous transitions of the bee swarm.&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;p&gt;In another study, we could also observe several parallels between decision making in house-hunting honeybees and psychophysical laws that can be found in human decision making. This suggests that these laws arise from fundamental mechanisms of information processing and decision making.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Representative publication:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/publication/best-of-n/&#34;&gt;A. Reina, .A.R. Marshall, V. Trianni, T. Bose, Physical Review E &lt;strong&gt;95&lt;/strong&gt;, 052411 (2017)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/publication/collective-decision-making/&#34;&gt;T. Bose, A. Reina, J.A.R. Marshall, Current Opinion in Behavioral Sciences &lt;strong&gt;16&lt;/strong&gt;, 30-34 (2017)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/publication/psychophysical-laws-and-the-superorganism/&#34;&gt;A. Reina, T. Bose, V. Trianni, J.A.R. Marshall, Scientific Reports &lt;strong&gt;8&lt;/strong&gt;: 4387 (2018)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Example to study a multivariate Master equation</title>
+      <link>/tutorial/simpleexample/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/tutorial/simpleexample/</guid>
+      <description>
+
+&lt;p&gt;The example in this tutorial is taken from the classical textbook by N. van Kampen (1981): Stochastic processes in physics and chemistry, pp. 273-277, North-Holland. The results can be derived analytically and thus can be used to verify MuMoT&amp;rsquo;s output.&lt;/p&gt;
+
+&lt;p&gt;This is an educational example of to derive and work with a multivariate Master equation. It describes a chemical reaction in an open system and involves two reactants, $X$ and $Y$.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s get started!&lt;/p&gt;
+
+&lt;h2 id=&#34;model-definition-and-basic-model-exploration&#34;&gt;Model definition and basic model exploration&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;model1 = mumot.parseModel(r&amp;quot;&amp;quot;&amp;quot;
+(A) -&amp;gt; X : \alpha
+X + X -&amp;gt; Y + \emptyset : \gamma
+Y -&amp;gt; (B) : \beta
+&amp;quot;&amp;quot;&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The above input cell defines our model. If you went through the &lt;a href=&#34;/tutorial/gettingstarted/&#34;&gt;Getting started tutorial&lt;/a&gt; before you will have noticed the different way to define a model. Here, the advantage is that we do not need an absolute cell reference as in the other example. Note we did two steps in one - defining and parsing our &lt;code&gt;model1&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;To see the reactions in a nicer format, let&amp;rsquo;s look at them with the &lt;code&gt;show()&lt;/code&gt; command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;model1.show()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;$\displaystyle (A)  \xrightarrow{\alpha}X $&lt;/p&gt;
+
+&lt;p&gt;$\displaystyle X + X  \xrightarrow{\gamma}Y + \emptyset $&lt;/p&gt;
+
+&lt;p&gt;$\displaystyle Y  \xrightarrow{\beta}(B) $&lt;/p&gt;
+
+&lt;p&gt;Here we have told MuMoT that $A$ and $B$ are constant reactants by putting them in parentheses, and the $\emptyset$-symbol indicates that we have an open system.&lt;/p&gt;
+
+&lt;p&gt;We can now derive the ODEs governing the deterministic dynamics of the system using &amp;hellip;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;model1.showODEs(method=&#39;vanKampen&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;$\displaystyle \frac{d}{d t} \Phi_X := \Phi_A \alpha - 2 \Phi_X^2 \gamma$&lt;/p&gt;
+
+&lt;p&gt;$\displaystyle \frac{d}{d t} \Phi_Y := \Phi_X^2 \gamma - \Phi_Y \beta$&lt;/p&gt;
+
+&lt;p&gt;This is a bit different than what you have seen in the &lt;a href=&#34;/tutorial/gettingstarted/&#34;&gt;Getting started tutorial&lt;/a&gt; tutorial. Here we used the keyword &lt;code&gt;method=&#39;vanKampen&#39;&lt;/code&gt;. The effect of this is that the ODEs are derived via a &lt;em&gt;van Kampen expansion&lt;/em&gt; (or &lt;em&gt;system size expansion&lt;/em&gt;). We will get back to this later. To compare with the default method we can simply omit the keyword and use &amp;hellip;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;model1.showODEs()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;$\displaystyle \displaystyle \frac{\textrm{d}Y}{\textrm{d}t} := X^{2} \gamma - Y \beta$&lt;/p&gt;
+
+&lt;p&gt;$\displaystyle \displaystyle \frac{\textrm{d}X}{\textrm{d}t} := A \alpha - 2 X^{2} \gamma$&lt;/p&gt;
+
+&lt;p&gt;You can see that the only difference is the symbol $\Phi$, which denotes concentrations throughout MuMoT. Concentrations or proportions are the quantities naturally arising from the van Kampen expansion.&lt;/p&gt;
+
+&lt;p&gt;To get an idea of what the dynamics in the system look like, we can numerically integrate the ODEs &amp;hellip;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;evol1 = model1.integrate(initWidgets={&#39;initialState&#39;: {&#39;X&#39;: [0.5,0,1,0.1], &#39;Y&#39;: [0.5,0,1,0.1]},
+&#39;maxTime&#39;: [5,3,20,1]},
+legend_loc=&#39;center right&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img//tutorialimg/masterEqInt.png&#34; width=&#34;500&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;At this point, you might want to play with sliders and see how the plot changes. Also, you could investigate the expression in the input cell and check the effect in the &lt;code&gt;Advanced options&lt;/code&gt; tab. Right, we changed the values on the slider. For more information on the options available, we refer to the comprehensive User Manual available on the &lt;a href=&#34;https://github.com/DiODeProject/MuMoT&#34; target=&#34;_blank&#34;&gt;MuMoT project page on GitHub&lt;/a&gt; or alternatively via &lt;a href=&#34;https://mybinder.org/v2/gh/DiODeProject/MuMoT/master?filepath=docs%2FMuMoTuserManual.ipynb&#34; target=&#34;_blank&#34;&gt;this link&lt;/a&gt; on MyBinder (no installation necessary). Also note that we ticked the &lt;code&gt;Plot population proportions&lt;/code&gt; box in the &lt;code&gt;Advanced options&lt;/code&gt; tab.&lt;/p&gt;
+
+&lt;p&gt;Next, we might be interested to get some information on the fluctuations in the system. Remember the numerical integration in the plot above relates to the macroscopic equations that do not contain any noise. It describes how the system evolves on avarage. However, depending on the system size fluctuations may be non-negligible (the smaller the system size the larger the fluctuations).&lt;/p&gt;
+
+&lt;h2 id=&#34;van-kampen-expansion&#34;&gt;Van Kampen expansion&lt;/h2&gt;
+
+&lt;p&gt;Our first step to study noise inthe system is to derive the chemical Master equation, i.e. we ask MuMoT to do this calculation for us using &amp;hellip;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;model1.showMasterEquation()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;$\displaystyle \frac{\partial}{\partial t} P{\left (X,Y,t \right )}:= \frac{A \alpha}{\overline{V}} ( \operatorname{E_{op}}{\left (X,-1 \right )} - 1 ) \overline{V} P{\left (X,Y,t \right )} + \gamma ( \operatorname{E_{op}}{\left (X,2 \right )} \operatorname{E_{op}}{\left (Y,-1 \right )} - 1 ) \frac{X \left(X - 1\right)}{\overline{V}} P{\left (X,Y,t \right )} + \beta ( \operatorname{E_{op}}{\left (Y,1 \right )} - 1 ) Y P{\left (X,Y,t \right )}$&lt;/p&gt;
+
+&lt;p&gt;In MuMoT we express the Master equation using step operators $E_{op}$, just as in van Kampen&amp;rsquo;s textbook. To derive expressions for the noise in the system, we make use of the &lt;em&gt;linear noise approximation&lt;/em&gt; to derive a multivariate &lt;em&gt;Fokker-Planck equation&lt;/em&gt; which is linear in the noise terms. This often cumbersome calculation can be automatically performed in MuMoT as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;model1.showFokkerPlanckEquation()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;$\displaystyle \frac{\partial}{\partial t} P{\left (\eta_X,\eta_Y,t \right )} := \frac{\Phi_A \alpha \frac{\partial^{2}}{\partial \eta_X^{2}} P{\left (\eta_X,\eta_Y,t \right )}}{2} + 2 \Phi_X^{2} \gamma \frac{\partial^{2}}{\partial \eta_X^{2}} P{\left (\eta_X,\eta_Y,t \right )} + \frac{\Phi_X^{2} \gamma \frac{\partial^{2}}{\partial \eta_Y^{2}} P{\left (\eta_X,\eta_Y,t \right )}}{2} - 2 \Phi_X^{2} \gamma \frac{\partial^{2}}{\partial \eta_Y\partial \eta_X} P{\left (\eta_X,\eta_Y,t \right )} + 4 \Phi_X \eta_X \gamma \frac{\partial}{\partial \eta_X} P{\left (\eta_X,\eta_Y,t \right )} - 2 \Phi_X \eta_X \gamma \frac{\partial}{\partial \eta_Y} P{\left (\eta_X,\eta_Y,t \right )} + 4 \Phi_X \gamma P{\left (\eta_X,\eta_Y,t \right )} + \frac{\Phi_Y \beta \frac{\partial^{2}}{\partial \eta_Y^{2}} P{\left (\eta_X,\eta_Y,t \right )}}{2} + \beta \eta_Y \frac{\partial}{\partial \eta_Y} P{\left (\eta_X,\eta_Y,t \right )} + \beta P{\left (\eta_X,\eta_Y,t \right )}$&lt;/p&gt;
+
+&lt;p&gt;This expression is indeed identical to the analytical expression in van Kampens book (1981, p.275, Eq.(5.7)). In MuMoT we use the reserved symbol $\eta$ to represent noise and the index indicates the subsystem of reactants associated with it.&lt;/p&gt;
+
+&lt;p&gt;Brilliant! With just pressing a button the equation was derived in no time.&lt;/p&gt;
+
+&lt;p&gt;Although solving partial differential equations is not yet supported in MuMoT, we can do more useful stuff with the linear Fokker-Planck equation. For example, we can automatically derive the equations for the first- and second order moments &amp;hellip;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;model1.showNoiseEquations()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;$\displaystyle \displaystyle \frac{\textrm{d}\left&amp;lt; \vphantom{Dg}\right.\eta_{X}\left. \vphantom{Dg}\right&amp;gt;}{\textrm{d}t} := - 4 \Phi_{X} \left&amp;lt; \vphantom{Dg}\right.\eta_{X}\left. \vphantom{Dg}\right&amp;gt; \gamma$&lt;/p&gt;
+
+&lt;p&gt;$\displaystyle \displaystyle \frac{\textrm{d}\left&amp;lt; \vphantom{Dg}\right.\eta_{Y}\left. \vphantom{Dg}\right&amp;gt;}{\textrm{d}t} := 2 \Phi_{X} \left&amp;lt; \vphantom{Dg}\right.\eta_{X}\left. \vphantom{Dg}\right&amp;gt; \gamma - \left&amp;lt; \vphantom{Dg}\right.\eta_{Y}\left. \vphantom{Dg}\right&amp;gt; \beta$&lt;/p&gt;
+
+&lt;p&gt;$\displaystyle \displaystyle \frac{\textrm{d}\left&amp;lt; \vphantom{Dg}\right.\eta_{X}^{2}\left. \vphantom{Dg}\right&amp;gt;}{\textrm{d}t} := \Phi_{A} \alpha + 4 \Phi_{X}^{2} \gamma - 8 \Phi_{X} \left&amp;lt; \vphantom{Dg}\right.\eta_{X}^{2}\left. \vphantom{Dg}\right&amp;gt; \gamma$&lt;/p&gt;
+
+&lt;p&gt;$\displaystyle \displaystyle \frac{\textrm{d}\left&amp;lt; \vphantom{Dg}\right.\eta_{X} \eta_{Y}\left. \vphantom{Dg}\right&amp;gt;}{\textrm{d}t} := - 2 \Phi_{X}^{2} \gamma + 2 \Phi_{X} \left&amp;lt; \vphantom{Dg}\right.\eta_{X}^{2}\left. \vphantom{Dg}\right&amp;gt; \gamma - \left&amp;lt; \vphantom{Dg}\right.\eta_{X} \eta_{Y}\left. \vphantom{Dg}\right&amp;gt; \left(4 \Phi_{X} \gamma + \beta\right)$&lt;/p&gt;
+
+&lt;p&gt;$\displaystyle \displaystyle \frac{\textrm{d}\left&amp;lt; \vphantom{Dg}\right.\eta_{Y}^{2}\left. \vphantom{Dg}\right&amp;gt;}{\textrm{d}t} := \Phi_{X}^{2} \gamma + 4 \Phi_{X} \left&amp;lt; \vphantom{Dg}\right.\eta_{X} \eta_{Y}\left. \vphantom{Dg}\right&amp;gt; \gamma + \Phi_{Y} \beta - 2 \left&amp;lt; \vphantom{Dg}\right.\eta_{Y}^{2}\left. \vphantom{Dg}\right&amp;gt; \beta$&lt;/p&gt;
+
+&lt;p&gt;and try to compute their solutions in the stationary state &amp;hellip;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;model1.showNoiseSolutions()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;Stationary solutions of first and second order moments of noise:
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;$\displaystyle \left&amp;lt; \vphantom{Dg}\right.\eta_{Y}\left. \vphantom{Dg}\right&amp;gt;(t \to \infty):= 0$&lt;/p&gt;
+
+&lt;p&gt;$\displaystyle \left&amp;lt; \vphantom{Dg}\right.\eta_{X}\left. \vphantom{Dg}\right&amp;gt;(t \to \infty):= 0$&lt;/p&gt;
+
+&lt;p&gt;$\displaystyle \left&amp;lt; \vphantom{Dg}\right.\eta_{X}^{2}\left. \vphantom{Dg}\right&amp;gt;(t \to \infty) := \frac{\Phi_{A} \alpha}{8 \Phi_{X} \gamma} + \frac{\Phi_{X}}{2}$&lt;/p&gt;
+
+&lt;p&gt;$\displaystyle \left&amp;lt; \vphantom{Dg}\right.\eta_{Y}^{2}\left. \vphantom{Dg}\right&amp;gt;(t \to \infty) := \frac{\Phi_{A} \Phi_{X} \alpha \gamma + \Phi_{X}^{2} \beta \gamma + 4 \Phi_{X} \Phi_{Y} \beta \gamma + \Phi_{Y} \beta^{2}}{2 \beta \left(4 \Phi_{X} \gamma + \beta\right)}$&lt;/p&gt;
+
+&lt;p&gt;$\displaystyle \left&amp;lt; \vphantom{Dg}\right.\eta_{X} \eta_{Y}\left. \vphantom{Dg}\right&amp;gt;(t \to \infty) := \frac{\frac{\Phi_{A} \alpha}{4} - \Phi_{X}^{2} \gamma}{4 \Phi_{X} \gamma + \beta}$&lt;/p&gt;
+
+&lt;p&gt;If the equations are not too complicated, MuMoT can successfully derive analytical expressions, as in this example. We can also visualise the temporal evolution of noise-noise correlations using the following command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;Ncorr1 = model1.noiseCorrelations(maxTime=3, legend_loc=&#39;upper right&#39;, legend_fontsize=12)
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img//tutorialimg/masterEqNoiseCorr.png&#34; width=&#34;500&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Fantastic! This produces a publication-ready figure with automatic labelling and legend generation (check the keywords in the input cell, too). Auto-correlations ($\eta_X(t) \eta_X(0)$ and $\eta_Y(t) \eta_Y(0)$) as well as cross-correlations ($\eta_X(t) \eta_Y(0)$ and $\eta_Y(t) \eta_X(0)$) are plotted.&lt;/p&gt;
+
+&lt;p&gt;More information can be found in the MuMoT User Manual (a Jupyter notebook). The quickest way to access this is by starting a server on MyBinder. Actually all you need to do is to follow &lt;a href=&#34;https://mybinder.org/v2/gh/DiODeProject/MuMoT/master?filepath=docs%2FMuMoTuserManual.ipynb&#34; target=&#34;_blank&#34;&gt;this link&lt;/a&gt; and you can work with it straight away!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Supplementary Material for publication in Neural Computation: Inhibition and Excitation Shape Activity Selection</title>
+      <link>/softwareitem/neco-suppl-mat/</link>
+      <pubDate>Mon, 01 Apr 2019 11:13:39 +0100</pubDate>
+      
+      <guid>/softwareitem/neco-suppl-mat/</guid>
+      <description>&lt;p&gt;Computer code for data generation accompanies our recent &lt;a href=&#34;/publication/inhibition-and-excitation-shape-activity-selection/&#34;&gt;Publication in the &lt;em&gt;Neural Computation&lt;/em&gt; journal&lt;/a&gt;. The code is open source and available via &lt;a href=&#34;https://github.com/DiODeProject/Inhibition-and-excitation-shape-activity-selection&#34; target=&#34;_blank&#34;&gt;this GitHub repository&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting started</title>
+      <link>/tutorial/gettingstarted/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/tutorial/gettingstarted/</guid>
+      <description>
+
+&lt;h2 id=&#34;working-with-mumot-a-class-tocskip&#34;&gt;Working with MuMoT &lt;a class=&#34;tocSkip&#34;&gt;&lt;/h2&gt;
+
+&lt;p&gt;MuMoT runs inside &lt;a href=&#34;http://jupyter.org&#34; target=&#34;_blank&#34;&gt;Jupyter notebooks&lt;/a&gt;. Jupyter needs to be installed on your machine (&lt;a href=&#34;https://jupyter.readthedocs.io/en/latest/install.html&#34; target=&#34;_blank&#34;&gt;see installation instructions&lt;/a&gt;). Basic information on working with Jupyter notebooks can be found &lt;a href=&#34;http://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Notebook%20Basics.html&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The next step before you can work with MuMoT is to follow &lt;a href=&#34;https://mumot.readthedocs.io/en/latest/getting_started.html&#34; target=&#34;_blank&#34;&gt;MuMoT&amp;rsquo;s installation instructions&lt;/a&gt; to install this Python package.&lt;/p&gt;
+
+&lt;p&gt;Now you are ready to import the MuMoT package into your notebook using &lt;code&gt;import mumot&lt;/code&gt; and to try it out!&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import mumot
+mumot.about()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;Created `%%model` as an alias for `%%latex`.
+Multiscale Modelling Tool (MuMoT): Version 1.0.0
+Authors: James A. R. Marshall, Andreagiovanni Reina, Thomas Bose
+Documentation: https://mumot.readthedocs.io/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It is a good sign if you have seen the message &lt;code&gt;Created `%%model` as an alias for `%%latex&lt;/code&gt;. Then everything went well with the installation and the import of MuMoT. As you can see, the &lt;code&gt;about()&lt;/code&gt; command gives some further details.&lt;/p&gt;
+
+&lt;h2 id=&#34;defining-your-first-model-a-class-tocskip&#34;&gt;Defining your first model &lt;a class=&#34;tocSkip&#34;&gt;&lt;/h2&gt;
+
+&lt;p&gt;MuMoT models are defined using the &lt;code&gt;%%model&lt;/code&gt; keyword within a cell. The syntax is meant to be intuitive and all processes are described as chemical reaction-like expressions, including the &lt;em&gt;reactants&lt;/em&gt; and &lt;em&gt;reaction rates&lt;/em&gt;. Here is an example:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;A + A -&amp;gt; A + U: s&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;where two particles of type $A$ interact, and one changes to type $U$, at rate $s$.&lt;/p&gt;
+
+&lt;p&gt;This means, reaction rules are quite general. Hence, MuMoT may be used to study a variety of different models that are based on interacting particels or agents. Our first model will be based on signalling behaviour observed in honeybee swarms, as described and modelled in &lt;a href=&#34;http://science.sciencemag.org/content/335/6064/108&#34; target=&#34;_blank&#34;&gt;Seeley &lt;em&gt;et al.&lt;/em&gt; (2012)&lt;/a&gt; and &lt;a href=&#34;https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0073216&#34; target=&#34;_blank&#34;&gt;Pais &lt;em&gt;et al.&lt;/em&gt; (2013)&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;$&lt;/code&gt; at the start and end of the input cell below just allow us to use &lt;a href=&#34;https://en.wikipedia.org/wiki/LaTeX&#34; target=&#34;_blank&#34;&gt;LaTeX&lt;/a&gt; codes for our state and rate labels, allowing us to use  letters from different alphabets, such as Greek, and other nice formatting.&lt;/p&gt;
+
+&lt;p&gt;OK, let&amp;rsquo;s define our first model &amp;hellip;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;%%model
+$
+U -&amp;gt; A : g_A
+U -&amp;gt; B : g_B
+A -&amp;gt; U : a_A
+B -&amp;gt; U : a_B
+A + U -&amp;gt; A + A : r_A
+B + U -&amp;gt; B + B : r_B
+A + B -&amp;gt; A + U : s
+A + B -&amp;gt; B + U : s
+$
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;$
+U -&amp;gt; A : g_A
+U -&amp;gt; B : g_B
+A -&amp;gt; U : a_A
+B -&amp;gt; U : a_B
+A + U -&amp;gt; A + A : r_A
+B + U -&amp;gt; B + B : r_B
+A + B -&amp;gt; A + U : s
+A + B -&amp;gt; B + U : s
+$&lt;/p&gt;
+
+&lt;p&gt;Here, $A$, $B$ and $U$ represent population of bees in different commitment states during nest site selection. More precisly, $A$ denotes scout bees committed to option $A$, $B$ denotes scout bees committed to option $B$, and $U$ represents scout bees that are uncommitted. There are several spontaneous and interaction transitions with rates given as the last parameter in each line after the &lt;code&gt;:&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The reaction rules should also be visible underneath the input cell. Following the model definition we need to parse the model so that we can work with it. This can be done with the &lt;code&gt;parseModel&lt;/code&gt; command. In our example we can simply use:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;model1 = mumot.parseModel(In[2])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This creates the model instance &lt;code&gt;model1&lt;/code&gt; but does not produce any output. The cell reference &lt;code&gt;In[2]&lt;/code&gt; is a necessary link to the cell in which the model was defined.&lt;/p&gt;
+
+&lt;h2 id=&#34;model-exploration-a-class-tocskip&#34;&gt;Model exploration &lt;a class=&#34;tocSkip&#34;&gt;&lt;/h2&gt;
+
+&lt;p&gt;Now that we have a working model we can do some basic exploration. So, let MuMoT generate the set of Ordinary Differential Equations (ODEs) of our &lt;code&gt;model1&lt;/code&gt; for us.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;model1.showODEs()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;$\displaystyle \displaystyle \frac{\textrm{d}A}{\textrm{d}t} := - A B s + A U r_A - A a_A + U g_A$&lt;/p&gt;
+
+&lt;p&gt;$\displaystyle \displaystyle \frac{\textrm{d}U}{\textrm{d}t} := 2 A B s - A U r_A + A a_A - B U r_B + B a_B - U g_A - U g_B$&lt;/p&gt;
+
+&lt;p&gt;$\displaystyle \displaystyle \frac{\textrm{d}B}{\textrm{d}t} := - A B s + B U r_B - B a_B + U g_B$&lt;/p&gt;
+
+&lt;p&gt;We can analyse these equations further but before we do that let&amp;rsquo;s simplify them. One equation is redundant here because there is a constant number of individuals in the swarm during a decision, i.e. the system is conserved.&lt;/p&gt;
+
+&lt;p&gt;A simpler set of equations can be obtained using &lt;code&gt;substitute()&lt;/code&gt; according to&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;model2 = model1.substitute(&#39;U = N - A - B&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To see that this indeed simplifies the ODEs we do (note that we created the new instance &lt;code&gt;model2&lt;/code&gt;) &amp;hellip;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;model2.showODEs()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;$\displaystyle \displaystyle \frac{\textrm{d}A}{\textrm{d}t} := - A B s - A a_A + A r_A \left(- B + \left(- A + N\right)\right) + g_A \left(- B + \left(- A + N\right)\right)$&lt;/p&gt;
+
+&lt;p&gt;$\displaystyle \displaystyle \frac{\textrm{d}B}{\textrm{d}t} := - A B s - B a_B + B r_B \left(- B + \left(- A + N\right)\right) + g_B \left(- B + \left(- A + N\right)\right)$&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip; and see that the number of equations was reduced from three to two. This is because the population of uncommitted bees has been replaced by $U=N-A-B$, where $N$ is the total number of bees which is a constant.&lt;/p&gt;
+
+&lt;p&gt;Now we can turn to more exciting graphical output and numerically &lt;em&gt;integrate&lt;/em&gt; the ODEs using the MuMoT-method &lt;code&gt;integrate()&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;int1 = model2.integrate()
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img//tutorialimg/gettingStartedInt2.png&#34; width=&#34;500&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;This should have created an interactive plot of the temporal evolution of populations over time. There are some sliders above the figure to manipulate this graph; MuMoT gives you a slider for every rate in the model, and by changing their values, you can see what happens to the behaviour of the system. There are more sliders in the &lt;code&gt;Advanced options&lt;/code&gt; tab which you can try out.&lt;/p&gt;
+
+&lt;p&gt;Important information related to this plot can be retrieved be showing the logs with the &lt;code&gt;showLogs&lt;/code&gt; command like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;int1.showLogs(tail = True)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;Showing last 3 of 3 log entries:
+Starting numerical integration of ODE system with parameters (a_{A}=2.0), (a_{B}=2.0), (g_{A}=2.0), (g_{B}=2.0), (r_{A}=2.0), (r_{B}=2.0), (s=2.0), (initA=1.0), (initB=0.0), (initU=0.0), (maxTime=3.0), (conserved=True), (substitutedReactant=U), at 2019-04-05 17:49:23.730840
+Last point on curve:
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;$\displaystyle A(t =3.0) = 3.4121$&lt;/p&gt;
+
+&lt;p&gt;$\displaystyle B(t =3.0) = 3.255$&lt;/p&gt;
+
+&lt;p&gt;As last part of this short introductory tutorial we will produce a vector of our system. This can be done using:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;vector1 = model2.vector(&#39;A&#39;, &#39;B&#39;, showNoise = True)
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img//tutorialimg/gettingStartedVec.png&#34; width=&#34;500&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;This vector plot depicts how the system evolves depending on the initial conditions. Proportions of bees in states $A$ and $B$ are labelled $\Phi_A$ and $\Phi_B$ - we use the upper-case Greek letter $\Phi$ to denote concentrations (proportions) and the reactants are added as indices. This is done throughout MuMoT and you will encounter this notation again when you work through more examples. Hence, upper-case $\Phi$ cannot be used as a user-defined symbol in MuMoT to avoid confusion. The green ellipse displays noise in the system due to a finite system size (change the system size slider above the plot and see how the ellipse changes; don&amp;rsquo;t increase the system size too much though, as this may increase computation time).&lt;/p&gt;
+
+&lt;p&gt;Again, model parameters may be altered via the sliders above the figure and useful information about the computation can be obtained using the &lt;code&gt;showLogs()&lt;/code&gt; command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;vector1.showLogs(tail = True)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;Showing last 3 of 3 log entries:
+Starting 2d vector plot with parameters (a_{A}=2.0), (a_{B}=2.0), (g_{A}=2.0), (g_{B}=2.0), (r_{A}=2.0), (r_{B}=2.0), (s=2.0), (aggregateResults=True), (maxTime=2.0), (randomSeed=1680863739), (runs=20), at 2019-04-05 17:49:30.713976
+Fixed point1:  A = -1.0000, B = -1.0000,  with eigenvalues:  4.0000, 8.0000,  and eigenvectors:  [-1.0000, 1.0000] and [1.0000, 1.0000]
+Fixed point2:  A = 0.3333, B = 0.3333,  with eigenvalues:  -8.0000, -1.3333,  and eigenvectors:  [1.0000, 1.0000] and [-1.0000, 1.0000]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This was just a very short introduction and there is much more to discover. A comprehensive &lt;em&gt;MuMoT User Manual&lt;/em&gt; can be found on the &lt;a href=&#34;https://github.com/DiODeProject/MuMoT&#34; target=&#34;_blank&#34;&gt;MuMoT GitHub page&lt;/a&gt; (in fact, the examples shown here were taken from this User Manual). Going through the User Manual is highly recommended if you are interested in using MuMoT. You don&amp;rsquo;t even need to install MuMoT yourself, just start it as server and give it a go on MyBinder following &lt;a href=&#34;https://mybinder.org/v2/gh/DiODeProject/MuMoT/master?filepath=docs%2FMuMoTuserManual.ipynb&#34; target=&#34;_blank&#34;&gt;this link&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nutritional Decision Making</title>
+      <link>/project/nutritional-decision-making/</link>
+      <pubDate>Sat, 30 Mar 2019 11:49:45 +0000</pubDate>
+      
+      <guid>/project/nutritional-decision-making/</guid>
+      <description>&lt;p&gt;Organisms frequently select activities,
+which relate to economic, social and perceptual decision-making problems.
+The choices made may have substantial impact on their lives.
+In foraging decisions, for example,
+animals aim at reaching a target intake of nutrients;
+it is generally believed
+that a balanced diet improves reproductive success,
+yet little is known about the underlying mechanisms
+that integrate nutritional needs within the brain.&lt;/p&gt;
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;featured.png&#34; width=&#34;400&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Schematic of neural circuit regulating feeding behaviour. Neural unit $y$ represents inhibiting interneurons and units $x_i \, (i=1,2)$ denote evidence-integrating accumulators.&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;p&gt;In our study, we addressed this coupling between
+physiological states and a decision-making circuit
+in the context of foraging decisions.
+We considered
+a model animal that has the drive to eat or drink.
+The motivation to select and perform one
+of these activities (i.e. eating or drinking),
+is processed in artificial neuronal units
+that have access to information on how hungry and thirsty the animal is
+at the point it makes the decision.
+We showed that inhibitory and excitatory mechanisms
+in the neural circuit shape ongoing binary
+decisions, and we revealed under which conditions
+oscillating motivations may improve
+the overall performance of the animal.
+Our results indicate that inefficient decision making
+may originate from suboptimal modulation of excitation
+and inhibition in the neurobiological network.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Representative publication:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/publication/inhibition-and-excitation-shape-activity-selection/&#34;&gt;T. Bose, A. Reina, J.A.R. Marshall, Neural Computation &lt;strong&gt;31&lt;/strong&gt; (5), 1-27 (2019)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New Paper Published in Neural Computation</title>
+      <link>/post/new-paper-published-in-neural-computation/</link>
+      <pubDate>Fri, 29 Mar 2019 21:59:29 +0000</pubDate>
+      
+      <guid>/post/new-paper-published-in-neural-computation/</guid>
+      <description>
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;NeCo.png&#34; width=&#34;400&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;This paper studies a model animal choosing between different food sources in an ongoing decision-making process. The decision-making circuit regulating the response is implemented via a generic neural hardware motif. Nonlinearities in the circuit influence the behaviour of the model animal. We find the unexpected result that inherent oscillations of neuronal activity may enhance decision-making performance.  The paper is scheduled to appear in the May 2019 issue of &lt;em&gt;Neural Computation&lt;/em&gt; (Volume 31, Issue 5).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/publication/inhibition-and-excitation-shape-activity-selection/&#34;&gt;T. Bose, A. Reina, J.A.R. Marshall, Neural Computation &lt;strong&gt;31&lt;/strong&gt; (5), 1-27 (2019)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Inhibition and Excitation Shape Activity Selection: Effect of Oscillations in a Decision-Making Circuit</title>
+      <link>/publication/inhibition-and-excitation-shape-activity-selection/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/inhibition-and-excitation-shape-activity-selection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Psychophysical Laws and the Superorganism</title>
+      <link>/publication/psychophysical-laws-and-the-superorganism/</link>
+      <pubDate>Mon, 12 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/psychophysical-laws-and-the-superorganism/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Effects of Spatiality on Value Sensitive Decisions Made by Robot Swarms</title>
+      <link>/publication/effects-of-spatiality-on-value-sensitive-decisions-made-by-robot-swarms/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/effects-of-spatiality-on-value-sensitive-decisions-made-by-robot-swarms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Model of the best-of-N nest-site selection process in honeybees</title>
+      <link>/publication/best-of-n/</link>
+      <pubDate>Mon, 22 May 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/best-of-n/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Collective Decision-Making</title>
+      <link>/publication/collective-decision-making/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/collective-decision-making/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ab-initio Calculations of Magnetic Interfaces</title>
+      <link>/project/ab-initio-calculations-of-magnetic-interfaces/</link>
+      <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/project/ab-initio-calculations-of-magnetic-interfaces/</guid>
+      <description>&lt;p&gt;Fe/MgO-interfaces in magnetic multilayer structures are of great importance in magnetic material science with regard to promising applications and devices. In our present investigation we are looking at basic properties of Fe/MgO-slab geometries.&lt;/p&gt;
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;featured.png&#34; width=&#34;400&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Illustration of MgO and Fe unit cells.&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;p&gt;Within a systematic study we investigated the effect of altering the Fe-layer thickness on quantities like layer-resolved magnetic moments, charge distributions and magnetocrystalline anisotropy. We made use of the SIESTA package which is based on density functional theory (DFT) and utilizes pseudo potentials and localized atomic orbitals as basis set. Our DFT-based calculations were performed within the generalized gradient approximation (GGA) for the exchange correlation potential. Typical calculations included the construction of the system under study and its relaxation to find the final atomic coordinates. Subsequent, information about energies, atomic magnetic moments and charges could be obtained directly from the SIESTA output. In particular, the magnetocrystalline anisotropy energy which is an important quantity regarding magnetic data storage devices could be calculated as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Representative publication:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://iopscience.iop.org/article/10.1088/0953-8984/28/15/156003&#34; target=&#34;_blank&#34;&gt;T. Bose, R. Cuadrado, R.F.L. Evans, R.V. Chepulskii, D. Apalkov and R.W. Chantrell
+Journal of Physics: Condensed Matter &lt;strong&gt;28&lt;/strong&gt;, 156003 (2016)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Magneto-optical Effect of Light Carrying Orbital Angular Momentum</title>
+      <link>/project/magneto-optical-effect/</link>
+      <pubDate>Mon, 01 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/project/magneto-optical-effect/</guid>
+      <description>&lt;p&gt;The design and fabrication of ever smaller and faster magnetic devices for data storage, sensorics and information processing entail the development of efficient tools to control the dynamic behavior of the magnetization. In particular, femtosecond laser-induced magnetic excitations, originating in thermal and nonthermal effects, offer the possibility to study magnetic systems on time scales down to $10-100$ femtoseconds.&lt;/p&gt;
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;featured.png&#34; width=&#34;400&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Schematic of laser pulse-induced electron motion.&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;p&gt;Nonthermal opto-magnetic effects bear high potential for promising magnetic devices and applications and pose interesting questions for theory. In the present study we worked out the role of nonlinear effects which are not negligible for intensities in the range of $10^{14} - 10^{16}$ W/cm$^2$. Utilizing a classical treatment of the laser-driven carrier in a given symmetry environment, it is possible to separate the electron motion into a first-order displacement that is directly proportional to the electrical field of the optical pulse and a second-order displacement that depends on the square of the electrical field. Considering magnetic insulators with a certain symmetry configuration we found that both the first-order and the second-order electron displacement create current loops that generate the light-induced magnetic fields $B^{(1)}$ and $B^{(2)}$. As the direction of rotation of the first-order electron displacement always opposes that of the second-order displacement, the light-induced fields $B^{(1)}$ and $B^{(2)}$ also carry opposite signs. Applying Laguerre-Gaussian laser beams which carry orbital angular momentum characterized by the number L, the total optically-generated magnetic field $B^{(1)} + B^{(2)}$ can be controlled by varying |L|.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Representative publication:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://iopscience.iop.org/article/10.1088/2040-8978/16/12/125201&#34; target=&#34;_blank&#34;&gt;T. Bose and J. Berakdar, Journal of Optics &lt;strong&gt;16&lt;/strong&gt;, 125201 (2014)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

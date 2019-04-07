@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Thomas Bose&#39;s Website</title>
+    <link>/project/</link>
+    <description>Recent content in Projects on Thomas Bose&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Apr 2019 08:30:15 +0100</lastBuildDate>
+    
+	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Collective Decision Making of a Robot Swarm</title>
+      <link>/project/collective-decision-making-of-a-robot-swarm/</link>
+      <pubDate>Tue, 02 Apr 2019 08:30:15 +0100</pubDate>
+      
+      <guid>/project/collective-decision-making-of-a-robot-swarm/</guid>
+      <description>Drawing inspiration from naturalistic systems, such as house-hunting honeybees, we aim to implement distributed robotics solutions. Swarm robotics is thought to be one of the key technologies in future applications. For example, autonomous robust robot groups have the potential to improve exploration and other tasks in hazardous environments that are inhospitable or inaccessible to humans or larger robots. Combining decision theory and artificial decision-making systems, we compare theoretical models and empirical data to identify possible real world applications.</description>
+    </item>
+    
+    <item>
+      <title>Collective Decision Making of House Hunting Honeybees</title>
+      <link>/project/collective-decision-making-of-house-hunting-honeybees/</link>
+      <pubDate>Tue, 02 Apr 2019 08:29:41 +0100</pubDate>
+      
+      <guid>/project/collective-decision-making-of-house-hunting-honeybees/</guid>
+      <description>In late spring and early summer, a honey bee colony becomes overcrowded. Then, half of the swarm rushes off with the old queen to setup a colony elsewhere and several hundred of its oldest bees will look for potential new nest sites. These scout bees come back to the hive and advertise new homes doing the waggle dance. Finally, the hive democratically selects a new nest site.
+In real house-hunting honeybees it is crucial for the swarm to reach consensus as quick as possible while choosing the best alternative available.</description>
+    </item>
+    
+    <item>
+      <title>Nutritional Decision Making</title>
+      <link>/project/nutritional-decision-making/</link>
+      <pubDate>Sat, 30 Mar 2019 11:49:45 +0000</pubDate>
+      
+      <guid>/project/nutritional-decision-making/</guid>
+      <description>Organisms frequently select activities, which relate to economic, social and perceptual decision-making problems. The choices made may have substantial impact on their lives. In foraging decisions, for example, animals aim at reaching a target intake of nutrients; it is generally believed that a balanced diet improves reproductive success, yet little is known about the underlying mechanisms that integrate nutritional needs within the brain.
+ Schematic of neural circuit regulating feeding behaviour.</description>
+    </item>
+    
+    <item>
+      <title>Ab-initio Calculations of Magnetic Interfaces</title>
+      <link>/project/ab-initio-calculations-of-magnetic-interfaces/</link>
+      <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/project/ab-initio-calculations-of-magnetic-interfaces/</guid>
+      <description>Fe/MgO-interfaces in magnetic multilayer structures are of great importance in magnetic material science with regard to promising applications and devices. In our present investigation we are looking at basic properties of Fe/MgO-slab geometries.
+ Illustration of MgO and Fe unit cells.   Within a systematic study we investigated the effect of altering the Fe-layer thickness on quantities like layer-resolved magnetic moments, charge distributions and magnetocrystalline anisotropy. We made use of the SIESTA package which is based on density functional theory (DFT) and utilizes pseudo potentials and localized atomic orbitals as basis set.</description>
+    </item>
+    
+    <item>
+      <title>Magneto-optical Effect of Light Carrying Orbital Angular Momentum</title>
+      <link>/project/magneto-optical-effect/</link>
+      <pubDate>Mon, 01 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/project/magneto-optical-effect/</guid>
+      <description>The design and fabrication of ever smaller and faster magnetic devices for data storage, sensorics and information processing entail the development of efficient tools to control the dynamic behavior of the magnetization. In particular, femtosecond laser-induced magnetic excitations, originating in thermal and nonthermal effects, offer the possibility to study magnetic systems on time scales down to $10-100$ femtoseconds.
+ Schematic of laser pulse-induced electron motion.   Nonthermal opto-magnetic effects bear high potential for promising magnetic devices and applications and pose interesting questions for theory.</description>
+    </item>
+    
+    <item>
+      <title>Modelling Of Tumor Growth And Immune Response</title>
+      <link>/project/modelling-of-tumor-growth-and-immune-response/</link>
+      <pubDate>Sat, 01 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/project/modelling-of-tumor-growth-and-immune-response/</guid>
+      <description>Tumor growth has become an important issue in medicine, biology and physics. Thus, understanding of cancer growth mechanisms is necessary to develop relevant strategies against this disease. It is widely accepted that the immune system plays an important role during tumor evolution and therapy.
+Introduced in the early 1900&amp;rsquo;s and again suggested in the middle of the 20th century there is the hypothesis that the immune system is able to detect and to eliminate nascent transformed cells.</description>
+    </item>
+    
+    <item>
+      <title>Spin Caloritronics</title>
+      <link>/project/spin-caloritronics/</link>
+      <pubDate>Sat, 01 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/project/spin-caloritronics/</guid>
+      <description>A new direction in magnetic nanostructure research has evolved by combining the control of heat currents and spin currents which is known as spin caloritronics. Phenomena in spin caloritronics are interesting from the point of view of fundamental as well as applied physics as they offer the opportunity to manipulate the spin degree of freedom with heat.
+ Schematic of temperature gradient ($T_1&amp;gt;T_2$) inducing magnetisation dynamics (magnetisation is denoted m).   Occurring in the same system heat currents and spin currents can be expected to interact mutually.</description>
+    </item>
+    
+  </channel>
+</rss>

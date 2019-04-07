@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Decision Making on Thomas Bose&#39;s Website</title>
+    <link>/tags/decision-making/</link>
+    <description>Recent content in Decision Making on Thomas Bose&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 Mar 2019 11:49:45 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/decision-making/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Nutritional Decision Making</title>
+      <link>/project/nutritional-decision-making/</link>
+      <pubDate>Sat, 30 Mar 2019 11:49:45 +0000</pubDate>
+      
+      <guid>/project/nutritional-decision-making/</guid>
+      <description>Organisms frequently select activities, which relate to economic, social and perceptual decision-making problems. The choices made may have substantial impact on their lives. In foraging decisions, for example, animals aim at reaching a target intake of nutrients; it is generally believed that a balanced diet improves reproductive success, yet little is known about the underlying mechanisms that integrate nutritional needs within the brain.
+ Schematic of neural circuit regulating feeding behaviour.</description>
+    </item>
+    
+  </channel>
+</rss>

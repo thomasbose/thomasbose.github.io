@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Softwareitems on Thomas Bose&#39;s Website</title>
+    <link>/softwareitem/</link>
+    <description>Recent content in Softwareitems on Thomas Bose&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Apr 2019 08:07:17 +0100</lastBuildDate>
+    
+	<atom:link href="/softwareitem/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MuMoT - Multiscale Modelling Tool</title>
+      <link>/softwareitem/mumot/</link>
+      <pubDate>Thu, 04 Apr 2019 08:07:17 +0100</pubDate>
+      
+      <guid>/softwareitem/mumot/</guid>
+      <description>MuMoT is a software tool developed at the University of Sheffield as part of the DiODe project. It is open source and can be accessed on the MuMoT GitHub page, including full documentation and installation instructions.
+MuMoT aims at life scientists/biologists with little mathematical background and engineers designing collective behaviours. It runs inside Jupyter notebooks. MuMoT will be available as Python package that is easy to install on a personal computer and can also be run as server: launch example-filled User Manual now in your web-browser on MyBinder.</description>
+    </item>
+    
+    <item>
+      <title>Supplementary Material for publication in Neural Computation: Inhibition and Excitation Shape Activity Selection</title>
+      <link>/softwareitem/neco-suppl-mat/</link>
+      <pubDate>Mon, 01 Apr 2019 11:13:39 +0100</pubDate>
+      
+      <guid>/softwareitem/neco-suppl-mat/</guid>
+      <description>Computer code for data generation accompanies our recent Publication in the Neural Computation journal. The code is open source and available via this GitHub repository.</description>
+    </item>
+    
+  </channel>
+</rss>

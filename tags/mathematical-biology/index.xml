@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mathematical Biology on Thomas Bose&#39;s Website</title>
+    <link>/tags/mathematical-biology/</link>
+    <description>Recent content in Mathematical Biology on Thomas Bose&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Dec 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/mathematical-biology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Modelling Of Tumor Growth And Immune Response</title>
+      <link>/project/modelling-of-tumor-growth-and-immune-response/</link>
+      <pubDate>Sat, 01 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/project/modelling-of-tumor-growth-and-immune-response/</guid>
+      <description>Tumor growth has become an important issue in medicine, biology and physics. Thus, understanding of cancer growth mechanisms is necessary to develop relevant strategies against this disease. It is widely accepted that the immune system plays an important role during tumor evolution and therapy.
+Introduced in the early 1900&amp;rsquo;s and again suggested in the middle of the 20th century there is the hypothesis that the immune system is able to detect and to eliminate nascent transformed cells.</description>
+    </item>
+    
+  </channel>
+</rss>

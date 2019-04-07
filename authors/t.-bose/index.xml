@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>T. Bose on Thomas Bose&#39;s Website</title>
+    <link>/authors/t.-bose/</link>
+    <description>Recent content in T. Bose on Thomas Bose&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/authors/t.-bose/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Inhibition and Excitation Shape Activity Selection: Effect of Oscillations in a Decision-Making Circuit</title>
+      <link>/publication/inhibition-and-excitation-shape-activity-selection/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/inhibition-and-excitation-shape-activity-selection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Psychophysical Laws and the Superorganism</title>
+      <link>/publication/psychophysical-laws-and-the-superorganism/</link>
+      <pubDate>Mon, 12 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/psychophysical-laws-and-the-superorganism/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Effects of Spatiality on Value Sensitive Decisions Made by Robot Swarms</title>
+      <link>/publication/effects-of-spatiality-on-value-sensitive-decisions-made-by-robot-swarms/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/effects-of-spatiality-on-value-sensitive-decisions-made-by-robot-swarms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Model of the best-of-N nest-site selection process in honeybees</title>
+      <link>/publication/best-of-n/</link>
+      <pubDate>Mon, 22 May 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/best-of-n/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Collective Decision-Making</title>
+      <link>/publication/collective-decision-making/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/collective-decision-making/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

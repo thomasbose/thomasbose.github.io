@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.1.0">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Thomas Bose">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Working with MuMoT  MuMoT runs inside Jupyter notebooks. Jupyter needs to be installed on your machine (see installation instructions). Basic information on working with Jupyter notebooks can be found here.
+The next step before you can work with MuMoT is to follow MuMoT&rsquo;s installation instructions to install this Python package.
+Now you are ready to import the MuMoT package into your notebook using import mumot and to try it out!">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/tutorial/gettingstarted/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Thomas Bose&#39;s Website">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Thomas Bose&#39;s Website">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/tutorial/gettingstarted/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Thomas Bose&#39;s Website">
+  <meta property="og:url" content="/tutorial/gettingstarted/">
+  <meta property="og:title" content="Getting started | Thomas Bose&#39;s Website">
+  <meta property="og:description" content="Working with MuMoT  MuMoT runs inside Jupyter notebooks. Jupyter needs to be installed on your machine (see installation instructions). Basic information on working with Jupyter notebooks can be found here.
+The next step before you can work with MuMoT is to follow MuMoT&rsquo;s installation instructions to install this Python package.
+Now you are ready to import the MuMoT package into your notebook using import mumot and to try it out!"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2019-04-01T00:00:00&#43;01:00">
+  
+  <meta property="article:modified_time" content="2019-04-01T00:00:00&#43;01:00">
+  
+
+  
+
+  
+
+  <title>Getting started | Thomas Bose&#39;s Website</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Thomas Bose&#39;s Website</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#news">
+            
+            <span>News</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#research">
+            
+            <span>Research</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#publications">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#software">
+            
+            <span>Software</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/tutorial/">
+            
+            <span>Tutorials</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" id="search-query" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/">Type of Tutorials</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/gettingstarted/">Introduction to MuMoT</a>
+    <ul class="nav docs-sidenav">
+      
+      <li class="active">
+        <a href="/tutorial/gettingstarted/">Getting started</a>
+      </li>
+      
+      <li >
+        <a href="/tutorial/simpleexample/">Example for multivariate master equation</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+      <p class="docs-toc-title">On this page</p>
+      
+
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#working-with-mumot-a-class-tocskip">Working with MuMoT <a class="tocSkip"></a></li>
+<li><a href="#defining-your-first-model-a-class-tocskip">Defining your first model <a class="tocSkip"></a></li>
+<li><a href="#model-exploration-a-class-tocskip">Model exploration <a class="tocSkip"></a></li>
+</ul></li>
+</ul>
+</nav>
+
+      <ul class="nav toc-top">
+        <li><a href="#">Back to top</a></li>
+      </ul>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name">Getting started</h1>
+
+          <div class="article-style" itemprop="articleBody">
+            
+
+<h2 id="working-with-mumot-a-class-tocskip">Working with MuMoT <a class="tocSkip"></h2>
+
+<p>MuMoT runs inside <a href="http://jupyter.org" target="_blank">Jupyter notebooks</a>. Jupyter needs to be installed on your machine (<a href="https://jupyter.readthedocs.io/en/latest/install.html" target="_blank">see installation instructions</a>). Basic information on working with Jupyter notebooks can be found <a href="http://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Notebook%20Basics.html" target="_blank">here</a>.</p>
+
+<p>The next step before you can work with MuMoT is to follow <a href="https://mumot.readthedocs.io/en/latest/getting_started.html" target="_blank">MuMoT&rsquo;s installation instructions</a> to install this Python package.</p>
+
+<p>Now you are ready to import the MuMoT package into your notebook using <code>import mumot</code> and to try it out!</p>
+
+<pre><code class="language-python">import mumot
+mumot.about()
+</code></pre>
+
+<pre><code>Created `%%model` as an alias for `%%latex`.
+Multiscale Modelling Tool (MuMoT): Version 1.0.0
+Authors: James A. R. Marshall, Andreagiovanni Reina, Thomas Bose
+Documentation: https://mumot.readthedocs.io/
+</code></pre>
+
+<p>It is a good sign if you have seen the message <code>Created `%%model` as an alias for `%%latex</code>. Then everything went well with the installation and the import of MuMoT. As you can see, the <code>about()</code> command gives some further details.</p>
+
+<h2 id="defining-your-first-model-a-class-tocskip">Defining your first model <a class="tocSkip"></h2>
+
+<p>MuMoT models are defined using the <code>%%model</code> keyword within a cell. The syntax is meant to be intuitive and all processes are described as chemical reaction-like expressions, including the <em>reactants</em> and <em>reaction rates</em>. Here is an example:</p>
+
+<p><code>A + A -&gt; A + U: s</code></p>
+
+<p>where two particles of type $A$ interact, and one changes to type $U$, at rate $s$.</p>
+
+<p>This means, reaction rules are quite general. Hence, MuMoT may be used to study a variety of different models that are based on interacting particels or agents. Our first model will be based on signalling behaviour observed in honeybee swarms, as described and modelled in <a href="http://science.sciencemag.org/content/335/6064/108" target="_blank">Seeley <em>et al.</em> (2012)</a> and <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0073216" target="_blank">Pais <em>et al.</em> (2013)</a>).</p>
+
+<p>The <code>$</code> at the start and end of the input cell below just allow us to use <a href="https://en.wikipedia.org/wiki/LaTeX" target="_blank">LaTeX</a> codes for our state and rate labels, allowing us to use  letters from different alphabets, such as Greek, and other nice formatting.</p>
+
+<p>OK, let&rsquo;s define our first model &hellip;</p>
+
+<pre><code class="language-python">%%model
+$
+U -&gt; A : g_A
+U -&gt; B : g_B
+A -&gt; U : a_A
+B -&gt; U : a_B
+A + U -&gt; A + A : r_A
+B + U -&gt; B + B : r_B
+A + B -&gt; A + U : s
+A + B -&gt; B + U : s
+$
+</code></pre>
+
+<p>$
+U -&gt; A : g_A
+U -&gt; B : g_B
+A -&gt; U : a_A
+B -&gt; U : a_B
+A + U -&gt; A + A : r_A
+B + U -&gt; B + B : r_B
+A + B -&gt; A + U : s
+A + B -&gt; B + U : s
+$</p>
+
+<p>Here, $A$, $B$ and $U$ represent population of bees in different commitment states during nest site selection. More precisly, $A$ denotes scout bees committed to option $A$, $B$ denotes scout bees committed to option $B$, and $U$ represents scout bees that are uncommitted. There are several spontaneous and interaction transitions with rates given as the last parameter in each line after the <code>:</code>.</p>
+
+<p>The reaction rules should also be visible underneath the input cell. Following the model definition we need to parse the model so that we can work with it. This can be done with the <code>parseModel</code> command. In our example we can simply use:</p>
+
+<pre><code class="language-python">model1 = mumot.parseModel(In[2])
+</code></pre>
+
+<p>This creates the model instance <code>model1</code> but does not produce any output. The cell reference <code>In[2]</code> is a necessary link to the cell in which the model was defined.</p>
+
+<h2 id="model-exploration-a-class-tocskip">Model exploration <a class="tocSkip"></h2>
+
+<p>Now that we have a working model we can do some basic exploration. So, let MuMoT generate the set of Ordinary Differential Equations (ODEs) of our <code>model1</code> for us.</p>
+
+<pre><code class="language-python">model1.showODEs()
+</code></pre>
+
+<p>$\displaystyle \displaystyle \frac{\textrm{d}A}{\textrm{d}t} := - A B s + A U r_A - A a_A + U g_A$</p>
+
+<p>$\displaystyle \displaystyle \frac{\textrm{d}U}{\textrm{d}t} := 2 A B s - A U r_A + A a_A - B U r_B + B a_B - U g_A - U g_B$</p>
+
+<p>$\displaystyle \displaystyle \frac{\textrm{d}B}{\textrm{d}t} := - A B s + B U r_B - B a_B + U g_B$</p>
+
+<p>We can analyse these equations further but before we do that let&rsquo;s simplify them. One equation is redundant here because there is a constant number of individuals in the swarm during a decision, i.e. the system is conserved.</p>
+
+<p>A simpler set of equations can be obtained using <code>substitute()</code> according to</p>
+
+<pre><code class="language-python">model2 = model1.substitute('U = N - A - B')
+</code></pre>
+
+<p>To see that this indeed simplifies the ODEs we do (note that we created the new instance <code>model2</code>) &hellip;</p>
+
+<pre><code class="language-python">model2.showODEs()
+</code></pre>
+
+<p>$\displaystyle \displaystyle \frac{\textrm{d}A}{\textrm{d}t} := - A B s - A a_A + A r_A \left(- B + \left(- A + N\right)\right) + g_A \left(- B + \left(- A + N\right)\right)$</p>
+
+<p>$\displaystyle \displaystyle \frac{\textrm{d}B}{\textrm{d}t} := - A B s - B a_B + B r_B \left(- B + \left(- A + N\right)\right) + g_B \left(- B + \left(- A + N\right)\right)$</p>
+
+<p>&hellip; and see that the number of equations was reduced from three to two. This is because the population of uncommitted bees has been replaced by $U=N-A-B$, where $N$ is the total number of bees which is a constant.</p>
+
+<p>Now we can turn to more exciting graphical output and numerically <em>integrate</em> the ODEs using the MuMoT-method <code>integrate()</code></p>
+
+<pre><code class="language-python">int1 = model2.integrate()
+</code></pre>
+
+
+
+
+<figure>
+
+<img src="/img//tutorialimg/gettingStartedInt2.png" width="500" />
+
+
+</figure>
+
+<p>This should have created an interactive plot of the temporal evolution of populations over time. There are some sliders above the figure to manipulate this graph; MuMoT gives you a slider for every rate in the model, and by changing their values, you can see what happens to the behaviour of the system. There are more sliders in the <code>Advanced options</code> tab which you can try out.</p>
+
+<p>Important information related to this plot can be retrieved be showing the logs with the <code>showLogs</code> command like so:</p>
+
+<pre><code class="language-python">int1.showLogs(tail = True)
+</code></pre>
+
+<pre><code>Showing last 3 of 3 log entries:
+Starting numerical integration of ODE system with parameters (a_{A}=2.0), (a_{B}=2.0), (g_{A}=2.0), (g_{B}=2.0), (r_{A}=2.0), (r_{B}=2.0), (s=2.0), (initA=1.0), (initB=0.0), (initU=0.0), (maxTime=3.0), (conserved=True), (substitutedReactant=U), at 2019-04-05 17:49:23.730840
+Last point on curve:
+</code></pre>
+
+<p>$\displaystyle A(t =3.0) = 3.4121$</p>
+
+<p>$\displaystyle B(t =3.0) = 3.255$</p>
+
+<p>As last part of this short introductory tutorial we will produce a vector of our system. This can be done using:</p>
+
+<pre><code class="language-python">vector1 = model2.vector('A', 'B', showNoise = True)
+</code></pre>
+
+
+
+
+<figure>
+
+<img src="/img//tutorialimg/gettingStartedVec.png" width="500" />
+
+
+</figure>
+
+<p>This vector plot depicts how the system evolves depending on the initial conditions. Proportions of bees in states $A$ and $B$ are labelled $\Phi_A$ and $\Phi_B$ - we use the upper-case Greek letter $\Phi$ to denote concentrations (proportions) and the reactants are added as indices. This is done throughout MuMoT and you will encounter this notation again when you work through more examples. Hence, upper-case $\Phi$ cannot be used as a user-defined symbol in MuMoT to avoid confusion. The green ellipse displays noise in the system due to a finite system size (change the system size slider above the plot and see how the ellipse changes; don&rsquo;t increase the system size too much though, as this may increase computation time).</p>
+
+<p>Again, model parameters may be altered via the sliders above the figure and useful information about the computation can be obtained using the <code>showLogs()</code> command:</p>
+
+<pre><code class="language-python">vector1.showLogs(tail = True)
+</code></pre>
+
+<pre><code>Showing last 3 of 3 log entries:
+Starting 2d vector plot with parameters (a_{A}=2.0), (a_{B}=2.0), (g_{A}=2.0), (g_{B}=2.0), (r_{A}=2.0), (r_{B}=2.0), (s=2.0), (aggregateResults=True), (maxTime=2.0), (randomSeed=1680863739), (runs=20), at 2019-04-05 17:49:30.713976
+Fixed point1:  A = -1.0000, B = -1.0000,  with eigenvalues:  4.0000, 8.0000,  and eigenvectors:  [-1.0000, 1.0000] and [1.0000, 1.0000]
+Fixed point2:  A = 0.3333, B = 0.3333,  with eigenvalues:  -8.0000, -1.3333,  and eigenvectors:  [1.0000, 1.0000] and [-1.0000, 1.0000]
+</code></pre>
+
+<p>This was just a very short introduction and there is much more to discover. A comprehensive <em>MuMoT User Manual</em> can be found on the <a href="https://github.com/DiODeProject/MuMoT" target="_blank">MuMoT GitHub page</a> (in fact, the examples shown here were taken from this User Manual). Going through the User Manual is highly recommended if you are interested in using MuMoT. You don&rsquo;t even need to install MuMoT yourself, just start it as server and give it a go on MyBinder following <a href="https://mybinder.org/v2/gh/DiODeProject/MuMoT/master?filepath=docs%2FMuMoTuserManual.ipynb" target="_blank">this link</a>.</p>
+
+          </div>
+
+          
+
+        </div>
+
+        <div class="body-footer">
+          Last updated on Apr 1, 2019
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+    
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.d7381f2d79e6271d4da28f474f49096c.js"></script>
+
+  </body>
+</html>
+
+

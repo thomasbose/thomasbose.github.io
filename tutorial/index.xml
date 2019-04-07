@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Type of Tutorials on Thomas Bose&#39;s Website</title>
+    <link>/tutorial/</link>
+    <description>Recent content in Type of Tutorials on Thomas Bose&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Example to study a multivariate Master equation</title>
+      <link>/tutorial/simpleexample/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/tutorial/simpleexample/</guid>
+      <description>The example in this tutorial is taken from the classical textbook by N. van Kampen (1981): Stochastic processes in physics and chemistry, pp. 273-277, North-Holland. The results can be derived analytically and thus can be used to verify MuMoT&amp;rsquo;s output.
+This is an educational example of to derive and work with a multivariate Master equation. It describes a chemical reaction in an open system and involves two reactants, $X$ and $Y$.</description>
+    </item>
+    
+    <item>
+      <title>Getting started</title>
+      <link>/tutorial/gettingstarted/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/tutorial/gettingstarted/</guid>
+      <description>Working with MuMoT  MuMoT runs inside Jupyter notebooks. Jupyter needs to be installed on your machine (see installation instructions). Basic information on working with Jupyter notebooks can be found here.
+The next step before you can work with MuMoT is to follow MuMoT&amp;rsquo;s installation instructions to install this Python package.
+Now you are ready to import the MuMoT package into your notebook using import mumot and to try it out!</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on Thomas Bose&#39;s Website</title>
+    <link>/authors/</link>
+    <description>Recent content in Authors on Thomas Bose&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 May 2017 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>.A.R. Marshall</title>
+      <link>/authors/.a.r.-marshall/</link>
+      <pubDate>Mon, 22 May 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/authors/.a.r.-marshall/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A. Reina</title>
+      <link>/authors/a.-reina/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/a.-reina/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>J.A.R. Marshall</title>
+      <link>/authors/j.a.r.-marshall/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/j.a.r.-marshall/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>T. Bose</title>
+      <link>/authors/t.-bose/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/t.-bose/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>V. Trianni</title>
+      <link>/authors/v.-trianni/</link>
+      <pubDate>Mon, 12 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/v.-trianni/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>admin</title>
+      <link>/authors/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/admin/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

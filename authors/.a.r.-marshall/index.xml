@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>.A.R. Marshall on Thomas Bose&#39;s Website</title>
+    <link>/authors/.a.r.-marshall/</link>
+    <description>Recent content in .A.R. Marshall on Thomas Bose&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 May 2017 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/authors/.a.r.-marshall/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Model of the best-of-N nest-site selection process in honeybees</title>
+      <link>/publication/best-of-n/</link>
+      <pubDate>Mon, 22 May 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/best-of-n/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

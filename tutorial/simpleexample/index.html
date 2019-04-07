@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.1.0">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Thomas Bose">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="The example in this tutorial is taken from the classical textbook by N. van Kampen (1981): Stochastic processes in physics and chemistry, pp. 273-277, North-Holland. The results can be derived analytically and thus can be used to verify MuMoT&rsquo;s output.
+This is an educational example of to derive and work with a multivariate Master equation. It describes a chemical reaction in an open system and involves two reactants, $X$ and $Y$.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/tutorial/simpleexample/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Thomas Bose&#39;s Website">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Thomas Bose&#39;s Website">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/tutorial/simpleexample/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Thomas Bose&#39;s Website">
+  <meta property="og:url" content="/tutorial/simpleexample/">
+  <meta property="og:title" content="Example to study a multivariate Master equation | Thomas Bose&#39;s Website">
+  <meta property="og:description" content="The example in this tutorial is taken from the classical textbook by N. van Kampen (1981): Stochastic processes in physics and chemistry, pp. 273-277, North-Holland. The results can be derived analytically and thus can be used to verify MuMoT&rsquo;s output.
+This is an educational example of to derive and work with a multivariate Master equation. It describes a chemical reaction in an open system and involves two reactants, $X$ and $Y$."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2019-04-02T00:00:00&#43;01:00">
+  
+  <meta property="article:modified_time" content="2019-04-02T00:00:00&#43;01:00">
+  
+
+  
+
+  
+
+  <title>Example to study a multivariate Master equation | Thomas Bose&#39;s Website</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Thomas Bose&#39;s Website</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#news">
+            
+            <span>News</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#research">
+            
+            <span>Research</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#publications">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#software">
+            
+            <span>Software</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/tutorial/">
+            
+            <span>Tutorials</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" id="search-query" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/">Type of Tutorials</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/gettingstarted/">Introduction to MuMoT</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/tutorial/gettingstarted/">Getting started</a>
+      </li>
+      
+      <li class="active">
+        <a href="/tutorial/simpleexample/">Example for multivariate master equation</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+      <p class="docs-toc-title">On this page</p>
+      
+
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#model-definition-and-basic-model-exploration">Model definition and basic model exploration</a></li>
+<li><a href="#van-kampen-expansion">Van Kampen expansion</a></li>
+</ul></li>
+</ul>
+</nav>
+
+      <ul class="nav toc-top">
+        <li><a href="#">Back to top</a></li>
+      </ul>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name">Example to study a multivariate Master equation</h1>
+
+          <div class="article-style" itemprop="articleBody">
+            
+
+<p>The example in this tutorial is taken from the classical textbook by N. van Kampen (1981): Stochastic processes in physics and chemistry, pp. 273-277, North-Holland. The results can be derived analytically and thus can be used to verify MuMoT&rsquo;s output.</p>
+
+<p>This is an educational example of to derive and work with a multivariate Master equation. It describes a chemical reaction in an open system and involves two reactants, $X$ and $Y$.</p>
+
+<p>Let&rsquo;s get started!</p>
+
+<h2 id="model-definition-and-basic-model-exploration">Model definition and basic model exploration</h2>
+
+<pre><code class="language-python">model1 = mumot.parseModel(r&quot;&quot;&quot;
+(A) -&gt; X : \alpha
+X + X -&gt; Y + \emptyset : \gamma
+Y -&gt; (B) : \beta
+&quot;&quot;&quot;)
+</code></pre>
+
+<p>The above input cell defines our model. If you went through the <a href="/tutorial/gettingstarted/">Getting started tutorial</a> before you will have noticed the different way to define a model. Here, the advantage is that we do not need an absolute cell reference as in the other example. Note we did two steps in one - defining and parsing our <code>model1</code>.</p>
+
+<p>To see the reactions in a nicer format, let&rsquo;s look at them with the <code>show()</code> command:</p>
+
+<pre><code class="language-python">model1.show()
+</code></pre>
+
+<p>$\displaystyle (A)  \xrightarrow{\alpha}X $</p>
+
+<p>$\displaystyle X + X  \xrightarrow{\gamma}Y + \emptyset $</p>
+
+<p>$\displaystyle Y  \xrightarrow{\beta}(B) $</p>
+
+<p>Here we have told MuMoT that $A$ and $B$ are constant reactants by putting them in parentheses, and the $\emptyset$-symbol indicates that we have an open system.</p>
+
+<p>We can now derive the ODEs governing the deterministic dynamics of the system using &hellip;</p>
+
+<pre><code class="language-python">model1.showODEs(method='vanKampen')
+</code></pre>
+
+<p>$\displaystyle \frac{d}{d t} \Phi_X := \Phi_A \alpha - 2 \Phi_X^2 \gamma$</p>
+
+<p>$\displaystyle \frac{d}{d t} \Phi_Y := \Phi_X^2 \gamma - \Phi_Y \beta$</p>
+
+<p>This is a bit different than what you have seen in the <a href="/tutorial/gettingstarted/">Getting started tutorial</a> tutorial. Here we used the keyword <code>method='vanKampen'</code>. The effect of this is that the ODEs are derived via a <em>van Kampen expansion</em> (or <em>system size expansion</em>). We will get back to this later. To compare with the default method we can simply omit the keyword and use &hellip;</p>
+
+<pre><code class="language-python">model1.showODEs()
+</code></pre>
+
+<p>$\displaystyle \displaystyle \frac{\textrm{d}Y}{\textrm{d}t} := X^{2} \gamma - Y \beta$</p>
+
+<p>$\displaystyle \displaystyle \frac{\textrm{d}X}{\textrm{d}t} := A \alpha - 2 X^{2} \gamma$</p>
+
+<p>You can see that the only difference is the symbol $\Phi$, which denotes concentrations throughout MuMoT. Concentrations or proportions are the quantities naturally arising from the van Kampen expansion.</p>
+
+<p>To get an idea of what the dynamics in the system look like, we can numerically integrate the ODEs &hellip;</p>
+
+<pre><code class="language-python">evol1 = model1.integrate(initWidgets={'initialState': {'X': [0.5,0,1,0.1], 'Y': [0.5,0,1,0.1]},
+'maxTime': [5,3,20,1]},
+legend_loc='center right')
+</code></pre>
+
+
+
+
+<figure>
+
+<img src="/img//tutorialimg/masterEqInt.png" width="500" />
+
+
+</figure>
+
+<p>At this point, you might want to play with sliders and see how the plot changes. Also, you could investigate the expression in the input cell and check the effect in the <code>Advanced options</code> tab. Right, we changed the values on the slider. For more information on the options available, we refer to the comprehensive User Manual available on the <a href="https://github.com/DiODeProject/MuMoT" target="_blank">MuMoT project page on GitHub</a> or alternatively via <a href="https://mybinder.org/v2/gh/DiODeProject/MuMoT/master?filepath=docs%2FMuMoTuserManual.ipynb" target="_blank">this link</a> on MyBinder (no installation necessary). Also note that we ticked the <code>Plot population proportions</code> box in the <code>Advanced options</code> tab.</p>
+
+<p>Next, we might be interested to get some information on the fluctuations in the system. Remember the numerical integration in the plot above relates to the macroscopic equations that do not contain any noise. It describes how the system evolves on avarage. However, depending on the system size fluctuations may be non-negligible (the smaller the system size the larger the fluctuations).</p>
+
+<h2 id="van-kampen-expansion">Van Kampen expansion</h2>
+
+<p>Our first step to study noise inthe system is to derive the chemical Master equation, i.e. we ask MuMoT to do this calculation for us using &hellip;</p>
+
+<pre><code class="language-python">model1.showMasterEquation()
+</code></pre>
+
+<p>$\displaystyle \frac{\partial}{\partial t} P{\left (X,Y,t \right )}:= \frac{A \alpha}{\overline{V}} ( \operatorname{E_{op}}{\left (X,-1 \right )} - 1 ) \overline{V} P{\left (X,Y,t \right )} + \gamma ( \operatorname{E_{op}}{\left (X,2 \right )} \operatorname{E_{op}}{\left (Y,-1 \right )} - 1 ) \frac{X \left(X - 1\right)}{\overline{V}} P{\left (X,Y,t \right )} + \beta ( \operatorname{E_{op}}{\left (Y,1 \right )} - 1 ) Y P{\left (X,Y,t \right )}$</p>
+
+<p>In MuMoT we express the Master equation using step operators $E_{op}$, just as in van Kampen&rsquo;s textbook. To derive expressions for the noise in the system, we make use of the <em>linear noise approximation</em> to derive a multivariate <em>Fokker-Planck equation</em> which is linear in the noise terms. This often cumbersome calculation can be automatically performed in MuMoT as follows:</p>
+
+<pre><code class="language-python">model1.showFokkerPlanckEquation()
+</code></pre>
+
+<p>$\displaystyle \frac{\partial}{\partial t} P{\left (\eta_X,\eta_Y,t \right )} := \frac{\Phi_A \alpha \frac{\partial^{2}}{\partial \eta_X^{2}} P{\left (\eta_X,\eta_Y,t \right )}}{2} + 2 \Phi_X^{2} \gamma \frac{\partial^{2}}{\partial \eta_X^{2}} P{\left (\eta_X,\eta_Y,t \right )} + \frac{\Phi_X^{2} \gamma \frac{\partial^{2}}{\partial \eta_Y^{2}} P{\left (\eta_X,\eta_Y,t \right )}}{2} - 2 \Phi_X^{2} \gamma \frac{\partial^{2}}{\partial \eta_Y\partial \eta_X} P{\left (\eta_X,\eta_Y,t \right )} + 4 \Phi_X \eta_X \gamma \frac{\partial}{\partial \eta_X} P{\left (\eta_X,\eta_Y,t \right )} - 2 \Phi_X \eta_X \gamma \frac{\partial}{\partial \eta_Y} P{\left (\eta_X,\eta_Y,t \right )} + 4 \Phi_X \gamma P{\left (\eta_X,\eta_Y,t \right )} + \frac{\Phi_Y \beta \frac{\partial^{2}}{\partial \eta_Y^{2}} P{\left (\eta_X,\eta_Y,t \right )}}{2} + \beta \eta_Y \frac{\partial}{\partial \eta_Y} P{\left (\eta_X,\eta_Y,t \right )} + \beta P{\left (\eta_X,\eta_Y,t \right )}$</p>
+
+<p>This expression is indeed identical to the analytical expression in van Kampens book (1981, p.275, Eq.(5.7)). In MuMoT we use the reserved symbol $\eta$ to represent noise and the index indicates the subsystem of reactants associated with it.</p>
+
+<p>Brilliant! With just pressing a button the equation was derived in no time.</p>
+
+<p>Although solving partial differential equations is not yet supported in MuMoT, we can do more useful stuff with the linear Fokker-Planck equation. For example, we can automatically derive the equations for the first- and second order moments &hellip;</p>
+
+<pre><code class="language-python">model1.showNoiseEquations()
+</code></pre>
+
+<p>$\displaystyle \displaystyle \frac{\textrm{d}\left&lt; \vphantom{Dg}\right.\eta_{X}\left. \vphantom{Dg}\right&gt;}{\textrm{d}t} := - 4 \Phi_{X} \left&lt; \vphantom{Dg}\right.\eta_{X}\left. \vphantom{Dg}\right&gt; \gamma$</p>
+
+<p>$\displaystyle \displaystyle \frac{\textrm{d}\left&lt; \vphantom{Dg}\right.\eta_{Y}\left. \vphantom{Dg}\right&gt;}{\textrm{d}t} := 2 \Phi_{X} \left&lt; \vphantom{Dg}\right.\eta_{X}\left. \vphantom{Dg}\right&gt; \gamma - \left&lt; \vphantom{Dg}\right.\eta_{Y}\left. \vphantom{Dg}\right&gt; \beta$</p>
+
+<p>$\displaystyle \displaystyle \frac{\textrm{d}\left&lt; \vphantom{Dg}\right.\eta_{X}^{2}\left. \vphantom{Dg}\right&gt;}{\textrm{d}t} := \Phi_{A} \alpha + 4 \Phi_{X}^{2} \gamma - 8 \Phi_{X} \left&lt; \vphantom{Dg}\right.\eta_{X}^{2}\left. \vphantom{Dg}\right&gt; \gamma$</p>
+
+<p>$\displaystyle \displaystyle \frac{\textrm{d}\left&lt; \vphantom{Dg}\right.\eta_{X} \eta_{Y}\left. \vphantom{Dg}\right&gt;}{\textrm{d}t} := - 2 \Phi_{X}^{2} \gamma + 2 \Phi_{X} \left&lt; \vphantom{Dg}\right.\eta_{X}^{2}\left. \vphantom{Dg}\right&gt; \gamma - \left&lt; \vphantom{Dg}\right.\eta_{X} \eta_{Y}\left. \vphantom{Dg}\right&gt; \left(4 \Phi_{X} \gamma + \beta\right)$</p>
+
+<p>$\displaystyle \displaystyle \frac{\textrm{d}\left&lt; \vphantom{Dg}\right.\eta_{Y}^{2}\left. \vphantom{Dg}\right&gt;}{\textrm{d}t} := \Phi_{X}^{2} \gamma + 4 \Phi_{X} \left&lt; \vphantom{Dg}\right.\eta_{X} \eta_{Y}\left. \vphantom{Dg}\right&gt; \gamma + \Phi_{Y} \beta - 2 \left&lt; \vphantom{Dg}\right.\eta_{Y}^{2}\left. \vphantom{Dg}\right&gt; \beta$</p>
+
+<p>and try to compute their solutions in the stationary state &hellip;</p>
+
+<pre><code class="language-python">model1.showNoiseSolutions()
+</code></pre>
+
+<pre><code>Stationary solutions of first and second order moments of noise:
+</code></pre>
+
+<p>$\displaystyle \left&lt; \vphantom{Dg}\right.\eta_{Y}\left. \vphantom{Dg}\right&gt;(t \to \infty):= 0$</p>
+
+<p>$\displaystyle \left&lt; \vphantom{Dg}\right.\eta_{X}\left. \vphantom{Dg}\right&gt;(t \to \infty):= 0$</p>
+
+<p>$\displaystyle \left&lt; \vphantom{Dg}\right.\eta_{X}^{2}\left. \vphantom{Dg}\right&gt;(t \to \infty) := \frac{\Phi_{A} \alpha}{8 \Phi_{X} \gamma} + \frac{\Phi_{X}}{2}$</p>
+
+<p>$\displaystyle \left&lt; \vphantom{Dg}\right.\eta_{Y}^{2}\left. \vphantom{Dg}\right&gt;(t \to \infty) := \frac{\Phi_{A} \Phi_{X} \alpha \gamma + \Phi_{X}^{2} \beta \gamma + 4 \Phi_{X} \Phi_{Y} \beta \gamma + \Phi_{Y} \beta^{2}}{2 \beta \left(4 \Phi_{X} \gamma + \beta\right)}$</p>
+
+<p>$\displaystyle \left&lt; \vphantom{Dg}\right.\eta_{X} \eta_{Y}\left. \vphantom{Dg}\right&gt;(t \to \infty) := \frac{\frac{\Phi_{A} \alpha}{4} - \Phi_{X}^{2} \gamma}{4 \Phi_{X} \gamma + \beta}$</p>
+
+<p>If the equations are not too complicated, MuMoT can successfully derive analytical expressions, as in this example. We can also visualise the temporal evolution of noise-noise correlations using the following command:</p>
+
+<pre><code class="language-python">Ncorr1 = model1.noiseCorrelations(maxTime=3, legend_loc='upper right', legend_fontsize=12)
+</code></pre>
+
+
+
+
+<figure>
+
+<img src="/img//tutorialimg/masterEqNoiseCorr.png" width="500" />
+
+
+</figure>
+
+<p>Fantastic! This produces a publication-ready figure with automatic labelling and legend generation (check the keywords in the input cell, too). Auto-correlations ($\eta_X(t) \eta_X(0)$ and $\eta_Y(t) \eta_Y(0)$) as well as cross-correlations ($\eta_X(t) \eta_Y(0)$ and $\eta_Y(t) \eta_X(0)$) are plotted.</p>
+
+<p>More information can be found in the MuMoT User Manual (a Jupyter notebook). The quickest way to access this is by starting a server on MyBinder. Actually all you need to do is to follow <a href="https://mybinder.org/v2/gh/DiODeProject/MuMoT/master?filepath=docs%2FMuMoTuserManual.ipynb" target="_blank">this link</a> and you can work with it straight away!</p>
+
+          </div>
+
+          
+
+        </div>
+
+        <div class="body-footer">
+          Last updated on Apr 2, 2019
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+    
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.d7381f2d79e6271d4da28f474f49096c.js"></script>
+
+  </body>
+</html>
+
+
