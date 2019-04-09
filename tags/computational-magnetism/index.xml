@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computational Magnetism on Thomas Bose&#39;s Website</title>
+    <link>/tags/computational-magnetism/</link>
+    <description>Recent content in Computational Magnetism on Thomas Bose&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Dec 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/computational-magnetism/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ab-initio Calculations of Magnetic Interfaces</title>
+      <link>/project/ab-initio-calculations-of-magnetic-interfaces/</link>
+      <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/project/ab-initio-calculations-of-magnetic-interfaces/</guid>
+      <description>Fe/MgO-interfaces in magnetic multilayer structures are of great importance in magnetic material science with regard to promising applications and devices. In our present investigation we are looking at basic properties of Fe/MgO-slab geometries.
+ Illustration of MgO and Fe unit cells.   Within a systematic study we investigated the effect of altering the Fe-layer thickness on quantities like layer-resolved magnetic moments, charge distributions and magnetocrystalline anisotropy. We made use of the SIESTA package which is based on density functional theory (DFT) and utilizes pseudo potentials and localized atomic orbitals as basis set.</description>
+    </item>
+    
+    <item>
+      <title>Magneto-optical Effect of Light Carrying Orbital Angular Momentum</title>
+      <link>/project/magneto-optical-effect/</link>
+      <pubDate>Mon, 01 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/project/magneto-optical-effect/</guid>
+      <description>The design and fabrication of ever smaller and faster magnetic devices for data storage, sensorics and information processing entail the development of efficient tools to control the dynamic behavior of the magnetization. In particular, femtosecond laser-induced magnetic excitations, originating in thermal and nonthermal effects, offer the possibility to study magnetic systems on time scales down to $10-100$ femtoseconds.
+ Schematic of laser pulse-induced electron motion.   Nonthermal opto-magnetic effects bear high potential for promising magnetic devices and applications and pose interesting questions for theory.</description>
+    </item>
+    
+    <item>
+      <title>Spin Caloritronics</title>
+      <link>/project/spin-caloritronics/</link>
+      <pubDate>Sat, 01 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/project/spin-caloritronics/</guid>
+      <description>A new direction in magnetic nanostructure research has evolved by combining the control of heat currents and spin currents which is known as spin caloritronics. Phenomena in spin caloritronics are interesting from the point of view of fundamental as well as applied physics as they offer the opportunity to manipulate the spin degree of freedom with heat.
+ Schematic of temperature gradient ($T_1&amp;gt;T_2$) inducing magnetisation dynamics (magnetisation is denoted m).   Occurring in the same system heat currents and spin currents can be expected to interact mutually.</description>
+    </item>
+    
+  </channel>
+</rss>

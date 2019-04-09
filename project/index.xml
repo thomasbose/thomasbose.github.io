@@ -6,18 +6,19 @@
     <description>Recent content in Projects on Thomas Bose&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Apr 2019 08:30:15 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 03 Apr 2019 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Collective Decision Making of a Robot Swarm</title>
-      <link>/project/collective-decision-making-of-a-robot-swarm/</link>
-      <pubDate>Tue, 02 Apr 2019 08:30:15 +0100</pubDate>
+      <title>Nutritional Decision Making</title>
+      <link>/project/nutritional-decision-making/</link>
+      <pubDate>Wed, 03 Apr 2019 00:00:00 +0100</pubDate>
       
-      <guid>/project/collective-decision-making-of-a-robot-swarm/</guid>
-      <description>Drawing inspiration from naturalistic systems, such as house-hunting honeybees, we aim to implement distributed robotics solutions. Swarm robotics is thought to be one of the key technologies in future applications. For example, autonomous robust robot groups have the potential to improve exploration and other tasks in hazardous environments that are inhospitable or inaccessible to humans or larger robots. Combining decision theory and artificial decision-making systems, we compare theoretical models and empirical data to identify possible real world applications.</description>
+      <guid>/project/nutritional-decision-making/</guid>
+      <description>Organisms frequently select activities, which relate to economic, social and perceptual decision-making problems. The choices made may have substantial impact on their lives. In foraging decisions, for example, animals aim at reaching a target intake of nutrients; it is generally believed that a balanced diet improves reproductive success, yet little is known about the underlying mechanisms that integrate nutritional needs within the brain.
+ Schematic of neural circuit regulating feeding behaviour.</description>
     </item>
     
     <item>
@@ -31,13 +32,12 @@ In real house-hunting honeybees it is crucial for the swarm to reach consensus a
     </item>
     
     <item>
-      <title>Nutritional Decision Making</title>
-      <link>/project/nutritional-decision-making/</link>
-      <pubDate>Sat, 30 Mar 2019 11:49:45 +0000</pubDate>
+      <title>Collective Decision Making of a Robot Swarm</title>
+      <link>/project/collective-decision-making-of-a-robot-swarm/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0100</pubDate>
       
-      <guid>/project/nutritional-decision-making/</guid>
-      <description>Organisms frequently select activities, which relate to economic, social and perceptual decision-making problems. The choices made may have substantial impact on their lives. In foraging decisions, for example, animals aim at reaching a target intake of nutrients; it is generally believed that a balanced diet improves reproductive success, yet little is known about the underlying mechanisms that integrate nutritional needs within the brain.
- Schematic of neural circuit regulating feeding behaviour.</description>
+      <guid>/project/collective-decision-making-of-a-robot-swarm/</guid>
+      <description>Drawing inspiration from naturalistic systems, such as house-hunting honeybees, we aim to implement distributed robotics solutions. Swarm robotics is thought to be one of the key technologies in future applications. For example, autonomous robust robot groups have the potential to improve exploration and other tasks in hazardous environments that are inhospitable or inaccessible to humans or larger robots. Combining decision theory and artificial decision-making systems, we compare theoretical models and empirical data to identify possible real world applications.</description>
     </item>
     
     <item>

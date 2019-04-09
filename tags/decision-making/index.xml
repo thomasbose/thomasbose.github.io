@@ -6,7 +6,7 @@
     <description>Recent content in Decision Making on Thomas Bose&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 Mar 2019 11:49:45 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Apr 2019 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/tags/decision-making/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,11 +14,30 @@
     <item>
       <title>Nutritional Decision Making</title>
       <link>/project/nutritional-decision-making/</link>
-      <pubDate>Sat, 30 Mar 2019 11:49:45 +0000</pubDate>
+      <pubDate>Wed, 03 Apr 2019 00:00:00 +0100</pubDate>
       
       <guid>/project/nutritional-decision-making/</guid>
       <description>Organisms frequently select activities, which relate to economic, social and perceptual decision-making problems. The choices made may have substantial impact on their lives. In foraging decisions, for example, animals aim at reaching a target intake of nutrients; it is generally believed that a balanced diet improves reproductive success, yet little is known about the underlying mechanisms that integrate nutritional needs within the brain.
  Schematic of neural circuit regulating feeding behaviour.</description>
+    </item>
+    
+    <item>
+      <title>Collective Decision Making of House Hunting Honeybees</title>
+      <link>/project/collective-decision-making-of-house-hunting-honeybees/</link>
+      <pubDate>Tue, 02 Apr 2019 08:29:41 +0100</pubDate>
+      
+      <guid>/project/collective-decision-making-of-house-hunting-honeybees/</guid>
+      <description>In late spring and early summer, a honey bee colony becomes overcrowded. Then, half of the swarm rushes off with the old queen to setup a colony elsewhere and several hundred of its oldest bees will look for potential new nest sites. These scout bees come back to the hive and advertise new homes doing the waggle dance. Finally, the hive democratically selects a new nest site.
+In real house-hunting honeybees it is crucial for the swarm to reach consensus as quick as possible while choosing the best alternative available.</description>
+    </item>
+    
+    <item>
+      <title>Collective Decision Making of a Robot Swarm</title>
+      <link>/project/collective-decision-making-of-a-robot-swarm/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/project/collective-decision-making-of-a-robot-swarm/</guid>
+      <description>Drawing inspiration from naturalistic systems, such as house-hunting honeybees, we aim to implement distributed robotics solutions. Swarm robotics is thought to be one of the key technologies in future applications. For example, autonomous robust robot groups have the potential to improve exploration and other tasks in hazardous environments that are inhospitable or inaccessible to humans or larger robots. Combining decision theory and artificial decision-making systems, we compare theoretical models and empirical data to identify possible real world applications.</description>
     </item>
     
   </channel>
