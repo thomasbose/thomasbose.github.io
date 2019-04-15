@@ -546,17 +546,17 @@ Fixed point2:  A = 0.3333, B = 0.3333,  with eigenvalues:  -8.0000, -1.3333,  an
 
 &lt;figure&gt;
 
-&lt;img src=&#34;NeCo.png&#34; width=&#34;400&#34; /&gt;
+&lt;img src=&#34;featured.jpg&#34; width=&#34;500&#34; /&gt;
 
 
 &lt;/figure&gt;
 
-&lt;p&gt;This paper studies a model animal choosing between different food sources in an ongoing decision-making process. The decision-making circuit regulating the response is implemented via a generic neural hardware motif. Nonlinearities in the circuit influence the behaviour of the model animal. We find the unexpected result that inherent oscillations of neuronal activity may enhance decision-making performance.  The paper is scheduled to appear in the May 2019 issue of &lt;em&gt;Neural Computation&lt;/em&gt; (Volume 31, Issue 5).&lt;/p&gt;
+&lt;p&gt;This paper studies a model animal choosing between different food sources in an ongoing decision-making process. The decision-making circuit regulating the response is implemented via a generic neural hardware motif. Nonlinearities in the circuit influence the behaviour of the model animal. We find the unexpected result that inherent oscillations of neuronal activity may enhance decision-making performance.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/publication/inhibition-and-excitation-shape-activity-selection/&#34;&gt;T. Bose, A. Reina, J.A.R. Marshall, Neural Computation (&lt;em&gt;early access online&lt;/em&gt;, scheduled to appear in Volume 31, Issue 5  (2019)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/publication/inhibition-and-excitation-shape-activity-selection/&#34;&gt;T. Bose, A. Reina, J.A.R. Marshall, Neural Computation &lt;strong&gt;31&lt;/strong&gt;: 870-896 (2019)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

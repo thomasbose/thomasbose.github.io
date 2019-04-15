@@ -17,7 +17,9 @@
       <pubDate>Fri, 29 Mar 2019 21:59:29 +0000</pubDate>
       
       <guid>/post/new-paper-published-in-neural-computation/</guid>
-      <description>This paper studies a model animal choosing between different food sources in an ongoing decision-making process. The decision-making circuit regulating the response is implemented via a generic neural hardware motif. Nonlinearities in the circuit influence the behaviour of the model animal. We find the unexpected result that inherent oscillations of neuronal activity may enhance decision-making performance. The paper is scheduled to appear in the May 2019 issue of Neural Computation (Volume 31, Issue 5).</description>
+      <description>   This paper studies a model animal choosing between different food sources in an ongoing decision-making process. The decision-making circuit regulating the response is implemented via a generic neural hardware motif. Nonlinearities in the circuit influence the behaviour of the model animal. We find the unexpected result that inherent oscillations of neuronal activity may enhance decision-making performance.
+Publication:
+ T. Bose, A. Reina, J.A.R. Marshall, Neural Computation 31: 870-896 (2019)  </description>
     </item>
     
   </channel>
