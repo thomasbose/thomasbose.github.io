@@ -6,10 +6,19 @@
     <description>Recent content in Publications on Thomas Bose&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 May 2019 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Frequency-Sensitivity and Magnitude-Sensitivity in Decision-Making: Predictions of a Theoretical Model-Based Study</title>
+      <link>/publication/frequency-sensitivity/</link>
+      <pubDate>Fri, 24 May 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/frequency-sensitivity/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Inhibition and Excitation Shape Activity Selection: Effect of Oscillations in a Decision-Making Circuit</title>
